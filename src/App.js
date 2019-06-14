@@ -1,23 +1,24 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "./img/logo.svg";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edite o <code>src/App.js</code> e salve para atualização da tela.
-        </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://collabcode.training/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Aprendendo React
+          <img src={logo} className="App-logo" alt="logo" />
         </a>
+        <nav>
+          <ul>
+            <li className="navItem">Sobre</li>
+          </ul>
+        </nav>
       </header>
     </div>
   );
