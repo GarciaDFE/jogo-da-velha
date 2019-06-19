@@ -1,24 +1,14 @@
 import React from "react";
-import logo from "./img/logo.svg";
 import "./App.css";
+import Logo from "./objects/logo"
+import NavItem from "./objects/navItem"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <a
-          className="App-link"
-          href="https://collabcode.training/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={logo} className="App-logo" alt="logo" />
-        </a>
-        <nav>
-          <ul>
-            <li className="navItem">Sobre</li>
-          </ul>
-        </nav>
+        <Logo />
+        <NavItem />
       </header>
     </div>
   );

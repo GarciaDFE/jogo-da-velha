@@ -8,3 +8,7 @@
 - **elements** -> ex: tag `p`-> configuração padrão de tags HTML do projeto
 - **objects** -> ex: title -> configuração seletor de classes
 - **components** -> ex: card-payment -> configuração seletor de classes
+
+## Sobre Reset CSS
+
+- usar o Normalize Reset CSS que vem dentro dos projetos React por default
