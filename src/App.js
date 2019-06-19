@@ -1,17 +1,11 @@
 import React from "react";
 import "./App.css";
-import Logo from "./objects/logo"
-import NavItem from "./objects/navItem"
-import Toggle from "./objects/toggle"
+import Header from "./components/header"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Logo />
-        <NavItem />
-        <Toggle />
-      </header>
+        <Header />
     </div>
   );
 }
