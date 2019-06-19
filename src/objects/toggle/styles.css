@@ -1,0 +1,27 @@
+.menu-toggle {
+     position: absolute;
+     width: 25px;
+     height: 3px;
+     background-color: var(--color-gray-dark);
+     border-radius: 5px;
+}
+
+.menu-toggle:after {
+     content: "";
+     position: absolute;
+     width: 25px;
+     height: 3px;
+     background: var(--color-gray-dark);
+     border-radius: 5px;
+     top: 7px;
+}
+
+.menu-toggle:before {
+     content: "";
+     position: absolute;
+     width: 25px;
+     height: 3px;
+     background: var(--color-gray-dark);
+     border-radius: 5px;
+     top: -7px;
+}
