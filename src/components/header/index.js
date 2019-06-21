@@ -1,14 +1,17 @@
 import React from "react";
 import Logo from "../../objects/logo"
-import NavBar from "../../objects/navbar"
+import NavItem from "../../objects/navItem"
+import Hamburg from "../../objects/hamburg"
 import "./styles.css"
-
 
 const Header = () => {
      return (
      <header className="app-header">
         <Logo />
-        <NavBar />
+        <div className="nav-bar">
+            <NavItem />
+            <Hamburg />
+        </div>
      </header>)
 }
 
