@@ -1,0 +1,11 @@
+.player-empty {
+     position: relative;
+     width: 84px;
+     height: 84px;
+     display: block;
+     cursor: pointer;
+}
+
+.player-empty:hover {
+     background-color: var(--color-gray-clean);
+}

@@ -3,6 +3,8 @@
      width: 84px;
      height: 84px;
      display: block;
+     cursor: pointer;
+
 }
 
 .player-o::before {
