@@ -1,18 +1,16 @@
 import React from "react";
-import Logo from "../../objects/logo"
-import NavItem from "../../objects/navItem"
-import Hamburg from "../../objects/hamburg"
+import Logo from "../../objects/Logo"
+import NavItem from "../../objects/NavItem"
+import MenuHamburg from "../../objects/MenuHamburg"
 import "./styles.css"
 
 const Header = () => {
      return (
-     <header className="app-header">
-        <Logo />
-        <div className="nav-bar">
+        <header className="app-header">
+            <Logo />
             <NavItem />
-            <Hamburg />
-        </div>
-     </header>)
+            <MenuHamburg />
+        </header>)
 }
 
 export default Header

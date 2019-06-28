@@ -1,11 +1,12 @@
 import React from "react";
 import "./styles.css";
-import logo from "../../img/logo.svg";
+import ImgLogo from "../../img/logo.svg";
 
 const Logo = () => {
      return (
-     <a className="App-link" href="https://collabcode.training/" target="_blank"rel="noopener noreferrer">
-     <img src={logo} className="logo" alt="logo" /></a>
+          <a className="App-link" href="https://collabcode.training/" target="_blank"rel="noopener noreferrer">
+               <img src={ImgLogo} className="logo" alt="imagem do logo da CollabCode" />
+          </a>
      )
 }
 

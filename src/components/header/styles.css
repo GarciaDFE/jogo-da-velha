@@ -1,12 +1,15 @@
 .app-header {
      display: flex;
-     align-items: center;
      justify-content: space-between;
-     padding: 10px 35px;
+     align-items: center;
+     padding: 20px 34px;
 }
 
-.app-header .nav-bar {
-  display: flex;
-  align-items: center;
-  margin-right: -10px;
+.app-header > .nav-item {
+     margin-left: auto;
+     margin-right: 15px;
+}
+
+.app-header > .menu-hamburg {
+     width: 25px;
 }
