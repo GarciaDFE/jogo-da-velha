@@ -4,3 +4,7 @@
   margin: 20px auto;
   border: 1px solid var(--color-gray-dark);
 }
+
+.App > .table {
+  margin: 90px auto 0;
+}
