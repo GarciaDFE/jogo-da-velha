@@ -1,7 +1,27 @@
 .table {
      width: 100vw;
      height: 100vh;
+     box-sizing: border-box;
+     border: 15.5px solid white;
      border-radius: 5px;
      background-color: var(--color-gray-zero);
      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+     background-image: linear-gradient(to right,
+          transparent 84.5px, 
+          var(--color-gray-dark) 84.5px, 
+          var(--color-gray-dark) 87.5px, 
+          transparent 87.5px,
+          transparent 172px, 
+          var(--color-gray-dark) 172px, 
+          var(--color-gray-dark) 175px, 
+          transparent 175px), 
+     linear-gradient(to bottom,
+          transparent 84.5px, 
+          var(--color-gray-dark) 84.5px, 
+          var(--color-gray-dark) 87.5px, 
+          transparent 87.5px,
+          transparent 172px, 
+          var(--color-gray-dark) 172px, 
+          var(--color-gray-dark) 175px, 
+          transparent 175px);
 }

@@ -8,27 +8,16 @@
      height: 290px;
 }
 
-.game > .grid {
-     width: 260px;
-     height: 260px;
-     position: absolute;
-     z-index: 2;
-     top: 15px;
-     left: 50%;
-     transform: translateX(-50%);
-}
-
 .game > .players {
      width: 260px;
      height: 260px;
-
      position: absolute;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
      align-items: center;
      z-index: 5;
-     top: 15px;
+     top: 15.5px;
      left: 50%;
      transform: translateX(-50%);
 }
