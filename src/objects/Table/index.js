@@ -1,9 +1,11 @@
 import React from "react";
 import "./styles.css";
 
-const Table = () => {
+const Table = ({children}) => {
      return (
-          <div className="table"></div>
+          <article className="table">
+               {children}
+          </article>
      )
 
 }

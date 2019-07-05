@@ -1,25 +1,24 @@
 import React from "react";
 import Table from "../../objects/Table"
-import PlayerX from "../../objects/PlayerX"
-import PlayerO from "../../objects/PlayerO"
-import PlayerEmpty from "../../objects/PlayerEmpty"
+import Player from "../../objects/Player"
 import "./styles.css"
 
 const Game = () => {
      return (
           <div className="game">
-               <Table />
-               <div className="players">
-                    <PlayerEmpty />
-                    <PlayerO />
-                    <PlayerX />
-                    <PlayerO />
-                    <PlayerX />
-                    <PlayerO />
-                    <PlayerX />
-                    <PlayerO />
-                    <PlayerX />
-               </div>
+               <Table>
+                    <Player />
+                    <Player player="o" />
+                    <Player player="x" />
+
+                    <Player player="o" />
+                    <Player player="x" />
+                    <Player player="o" />
+
+                    <Player player="x" />
+                    <Player player="o" />               
+                    <Player player="x" />
+               </Table>
           </div>
      )
 }

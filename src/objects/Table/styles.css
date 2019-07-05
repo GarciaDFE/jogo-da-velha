@@ -1,11 +1,12 @@
 .table {
+     /* estilos próprios de background e grid */
      width: 100vw;
      height: 100vh;
      box-sizing: border-box;
      border: 15.5px solid white;
-     border-radius: 5px;
+     border-radius: var(--spacing-radius);
      background-color: var(--color-gray-zero);
-     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+     box-shadow: 0 3px 6px 0 var(--color-gray-very-transparent);
      background-image: linear-gradient(to right,
           transparent 84.5px, 
           var(--color-gray-dark) 84.5px, 
@@ -24,4 +25,12 @@
           var(--color-gray-dark) 172px, 
           var(--color-gray-dark) 175px, 
           transparent 175px);
+
+     /* estilos para dispor os filhos (players) */
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 5;
 }
+

@@ -1,11 +1,11 @@
 :root {
   --color-gray-very-dark: #3a4042;
+  --color-gray-very-transparent: rgba(58, 64, 66, 0.2);
   --color-gray-dark: #707070;
   --color-gray-medium: #e5e5e5;
   --color-gray-light: #f1f1f1;
   --color-gray-clean: #eee;
   --color-gray-zero: #fff;
-
 
   --color-result: #eff25a;
 }
