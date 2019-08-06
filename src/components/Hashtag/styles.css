@@ -1,20 +1,91 @@
 .table {
      padding: 15px;
 }
+
 .hashtag {
      height: 100%;
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
      grid-template-rows: 1fr 1fr 1fr;
-     grid-gap: 3px;
-     background-color: var(--color-gray-medium-2);
 }
 
 .hashtag > .item {
      width: 100%;
      height: 100%;
-     background-color: var(--color-gray-zero);
      display: flex;
      justify-content: center;
      align-items: center;
+     box-sizing: border-box;
+}
+
+.hashtag > .item:nth-child(2),
+.hashtag > .item:nth-child(8),
+.hashtag > .item:nth-child(4),
+.hashtag > .item:nth-child(4),
+.hashtag > .item:nth-child(6),
+.hashtag > .item:nth-child(6) {
+     justify-content: space-between;
+}
+
+.hashtag > .item:nth-child(4),
+.hashtag > .item:nth-child(4),
+.hashtag > .item:nth-child(6),
+.hashtag > .item:nth-child(6) {
+          flex-direction: column;
+}
+
+.hashtag > .item:nth-child(2)::before,
+.hashtag > .item:nth-child(2)::after,
+.hashtag > .item:nth-child(4)::before,
+.hashtag > .item:nth-child(4)::after,
+.hashtag > .item:nth-child(6)::before,
+.hashtag > .item:nth-child(6)::after,
+.hashtag > .item:nth-child(8)::before,
+.hashtag > .item:nth-child(8)::after {
+     content:"";
+     background-color: var(--color-gray-medium-2);
+}
+
+.hashtag > .item:nth-child(2)::before,
+.hashtag > .item:nth-child(2)::after,
+.hashtag > .item:nth-child(8)::before,
+.hashtag > .item:nth-child(8)::after {
+     width: 3px;
+     height: 100%;
+}
+
+.hashtag > .item:nth-child(4)::before,
+.hashtag > .item:nth-child(4)::after,
+.hashtag > .item:nth-child(6)::before,
+.hashtag > .item:nth-child(6)::after {
+     width: 100%;
+     height: 3px;
+}
+
+.hashtag > .item:nth-child(5) {
+     border: 3px solid var(--color-gray-medium-2);
+}
+
+.hashtag > .item:nth-child(2)::before,
+.hashtag > .item:nth-child(2)::after {
+     border-top-left-radius: 1.5px;
+     border-top-right-radius: 1.5px;
+}
+
+.hashtag > .item:nth-child(4)::before,
+.hashtag > .item:nth-child(4)::after {
+     border-top-left-radius: 1.5px;
+     border-bottom-left-radius: 1.5px;
+}
+
+.hashtag > .item:nth-child(6)::before,
+.hashtag > .item:nth-child(6)::after {
+     border-top-right-radius: 1.5px;
+     border-bottom-right-radius: 1.5px;
+}
+
+.hashtag > .item:nth-child(8)::before,
+.hashtag > .item:nth-child(8)::after {
+     border-bottom-left-radius: 1.5px;
+     border-bottom-right-radius: 1.5px;
 }
