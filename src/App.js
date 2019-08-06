@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Label from "./objects/Label"
+import Checkbox from "./objects/Checkbox"
 import Header from "./components/Header"
 import Hashtag from "./components/Hashtag"
 
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
         <Header />
         <Hashtag />
-        <Label content="Mostrar eventos"/>
+        <Checkbox id="show" value="show" content="Mostrar eventos"/>
     </div>
   );
 }
