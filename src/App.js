@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/Header"
-import Game from "./components/Game"
+import Hashtag from "./components/Hashtag"
 
 function App() {
   return (
     <div className="App">
         <Header />
-        <Game />
+        <Hashtag />
     </div>
   );
 }
