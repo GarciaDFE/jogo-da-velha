@@ -1,17 +1,20 @@
 import React from "react";
 import "./App.css";
-import Checkbox from "./objects/Checkbox"
-import About from "./objects/About"
-import Header from "./components/Header"
-import Hashtag from "./components/Hashtag"
+import CheckboxEvents from "./objects/CheckboxEvents"
+import AboutGame from "./objects/AboutGame"
+import HeaderGame from "./components/HeaderGame"
+import HashtagGame from "./components/HashtagGame"
+import HeaderAbout from "./components/HeaderAbout";
 
 function App() {
   return (
     <div className="App">
-        <Header />
-        <Hashtag />
-        <Checkbox id="show" value="show" content="Mostrar eventos"/>
-        <About />
+        <HeaderGame />
+        <HashtagGame />
+        <CheckboxEvents id="show" value="show" content="Mostrar eventos"/>
+        <AboutGame>
+          <HeaderAbout />
+        </AboutGame>
     </div>
   );
 }

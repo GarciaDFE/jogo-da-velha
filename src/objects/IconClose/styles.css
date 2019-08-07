@@ -1,0 +1,36 @@
+.icon-close {
+     position: relative;
+     display: inline-block;
+     width: 30px;
+     height: 30px;
+}
+
+.icon-close::before,
+.icon-close::after {
+     content: "";
+     position: absolute;
+     display: inline-block;
+     background-color: var(--color-gray-zero);
+     border-radius: 2px;
+}
+
+.icon-close::before {
+     width: 34px;
+     height: 4px;
+     top: 50%;
+     left: -2px;
+     transform: translateY(-50%) rotate(45deg);
+}
+
+.icon-close::after {
+     width: 4px;
+     height: 34px;
+     top: -2px;
+     left: 50%;
+     transform: translateX(-50%) rotate(45deg);
+}
+
+.icon-close > .content {
+     display: inline-block;
+     text-indent: -9999px;
+}

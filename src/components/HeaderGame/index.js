@@ -1,16 +1,16 @@
 import React from "react";
-import Logo from "../../objects/Logo"
+import LogoCollab from "../../objects/LogoCollab"
 import NavItem from "../../objects/NavItem"
 import MenuHamburg from "../../objects/MenuHamburg"
 import "./styles.css"
 
-const Header = () => {
+const HeaderGame = () => {
      return (
-        <header className="app-header">
-            <Logo />
+        <header className="header-game">
+            <LogoCollab />
             <NavItem />
             <MenuHamburg />
         </header>)
 }
 
-export default Header
+export default HeaderGame

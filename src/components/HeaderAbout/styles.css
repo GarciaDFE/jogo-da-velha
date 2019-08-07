@@ -1,0 +1,13 @@
+.header-about {
+     box-sizing: border-box;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 18px 35px;
+}
+
+.header-about > .nav-item {
+     margin-left: auto;
+     margin-right: 10px;
+}

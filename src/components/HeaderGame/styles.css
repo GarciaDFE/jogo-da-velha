@@ -1,4 +1,4 @@
-.app-header {
+.header-game {
      width: 100%;
      display: flex;
      justify-content: space-between;
@@ -6,11 +6,11 @@
      padding: 20px 34px;
 }
 
-.app-header > .nav-item {
+.header-game > .nav-item {
      margin-left: auto;
      margin-right: 15px;
 }
 
-.app-header > .menu-hamburg {
+.header-game > .menu-hamburg {
      width: 25px;
 }

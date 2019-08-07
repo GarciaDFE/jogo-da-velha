@@ -1,10 +1,13 @@
 .nav-item {
-     list-style: none;
-     font-size: 14px;
-     font-weight: bold;
-     text-decoration: none;
-     text-transform: uppercase;
-     color:  var(--color-gray-dark);
-     cursor: pointer;
-   }
-   
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-gray-very-dark);
+  cursor: pointer;
+}
+
+.nav-item.-light {
+  color: var(--color-gray-zero);
+}

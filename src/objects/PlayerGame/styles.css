@@ -1,4 +1,4 @@
-.player {
+.player-game {
      width: 58px;
      height: 58px;
      position: relative;
@@ -8,8 +8,8 @@
 }
 
 /* Jogador X */
-.player.-x::before,
-.player.-x::after {
+.player-game.-x::before,
+.player-game.-x::after {
      content: "";
      display: block;
      width: 58px;
@@ -22,15 +22,15 @@
      transform-origin: center;
 }
 
-.player.-x::before {
+.player-game.-x::before {
      transform: translateX(-50%) rotate(45deg);
 }
-.player.-x::after {
+.player-game.-x::after {
      transform: translateX(-50%) rotate(-45deg);
 }
 
 /* Jogador O */
-.player.-o::before {
+.player-game.-o::before {
      content: "";
      box-sizing: border-box;
      display: block;
@@ -44,6 +44,6 @@
      transform-origin: center;
 }
 
-.player.-o::before {
+.player-game.-o::before {
      transform: translateX(-50%) translateY(-50%);
 }

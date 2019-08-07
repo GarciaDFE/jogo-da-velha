@@ -1,13 +1,13 @@
 import React from "react";
 import "./styles.css";
 
-const Table = ({children}) => {
+const TableGame = ({children}) => {
      return (
-          <article className="table">
+          <article className="table-game">
                {children}
           </article>
      )
 
 }
 
-export default Table
+export default TableGame
