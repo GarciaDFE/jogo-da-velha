@@ -1,17 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
-const PlayerGame = ({player}) => {
-     let players = 'player-game';
 
-     if (player === 'x') {
-          players = "player-game -x"; 
-     } else if (player === 'o') {
-          players = "player-game -o"
-     }
-
+const PlayerGame = ({player = "false"}) => {
+     const [statePlayer, setStatePlayer] = useState(player);
+     
+     const handleClick = () => setStatePlayer("x")
      return (
-          <button className={players}></button>
+          <button onClick={handleClick} className={`player-game -${statePlayer}`}></button>
      )
 }
 

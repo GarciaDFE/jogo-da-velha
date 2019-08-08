@@ -20,3 +20,11 @@
 .app > .label-event {
   margin-bottom: var(--spacing-big);
 }
+
+.app > .history-game {
+  display: none;
+}
+
+.app > .main-input:checked ~ .history-game {
+  display: block;
+}
