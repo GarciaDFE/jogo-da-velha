@@ -1,8 +1,10 @@
 import React from "react";
 import "./styles.css";
 
-const MenuHamburg = () => (
-     <a className="menu-hamburg" href="#to-do">
+const MenuHamburg = ({ onClick }) => (
+     <a className="menu-hamburg"
+          onClick={onClick}
+          href="#menu">
           <span className="center">Menu</span>
      </a>    
 )

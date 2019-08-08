@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.css"
 
-const AboutGame = ({ children }) => (
-     <article className="about-game">{children}</article>
+const AboutGame = ({ children, className = "" }) => (
+     <article className={`about-game ${className}`}>{children}</article>
 )
 
 export default AboutGame

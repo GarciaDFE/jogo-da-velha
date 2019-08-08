@@ -4,11 +4,11 @@ import NavItem from "../../objects/NavItem"
 import IconClose from "../../objects/IconClose"
 import "./styles.css"
 
-const HeaderAbout = () => (
+const HeaderAbout = ({ onClick }) => (
         <header className="header-about">
             <LogoCollab light />
-            <NavItem className="-light"/>
-            <IconClose />
+            <NavItem className="-light" onClick={onClick}/>
+            <IconClose onClick={onClick}/>
         </header>
 )
 

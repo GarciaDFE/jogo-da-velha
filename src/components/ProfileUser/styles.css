@@ -21,7 +21,7 @@
      max-width: 400px;
      font-size: var(--size-small);
      line-height: 1.6;
-     margin: 0 auto var(--spacing-big);
+     margin: 0 auto var(--spacing-very-big);
 }
 
 .profile-user > .socials {

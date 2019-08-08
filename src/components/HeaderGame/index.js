@@ -4,12 +4,12 @@ import NavItem from "../../objects/NavItem"
 import MenuHamburg from "../../objects/MenuHamburg"
 import "./styles.css"
 
-const HeaderGame = () => {
+const HeaderGame = ({ onClick }) => {
      return (
         <header className="header-game">
             <LogoCollab />
-            <NavItem />
-            <MenuHamburg />
+            <NavItem onClick={onClick}/>
+            <MenuHamburg onClick={onClick}/>
         </header>)
 }
 

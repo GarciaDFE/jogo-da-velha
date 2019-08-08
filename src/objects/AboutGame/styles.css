@@ -5,4 +5,11 @@
      width: 100vw;
      height: 100vh;
      background-color: var(--color-gray-very-dark);
+     transform: translateX(100%);
+     transition: transform 300ms linear;
+}
+
+.about-game.-active {
+     transform: translateX(0);
+     transition: transform 300ms linear;
 }
