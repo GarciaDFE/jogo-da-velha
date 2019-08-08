@@ -1,0 +1,33 @@
+.profile-user {
+     text-align: center;
+     color: var(--color-gray-zero);
+     margin: 0 auto;
+}
+
+.profile-user .avatar-profile {
+     width: 130px;
+     text-align: center;
+     margin-bottom: var(--spacing-medium);
+}
+
+.profile-user > .title {
+     font-size: var(--size-big);
+     font-weight: bold;
+     margin-bottom: var(--spacing-small);
+}
+
+.profile-user > .description {
+     width: 70%;
+     max-width: 400px;
+     font-size: var(--size-small);
+     line-height: 1.6;
+     margin: 0 auto var(--spacing-big);
+}
+
+.profile-user > .socials {
+     width: 50%;
+     max-width: 300px;
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+}

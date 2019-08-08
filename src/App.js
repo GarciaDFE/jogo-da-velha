@@ -5,6 +5,7 @@ import AboutGame from "./objects/AboutGame"
 import HeaderGame from "./components/HeaderGame"
 import HashtagGame from "./components/HashtagGame"
 import HeaderAbout from "./components/HeaderAbout";
+import ProfileUser from "./components/ProfileUser";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <CheckboxEvents id="show" value="show" content="Mostrar eventos"/>
         <AboutGame>
           <HeaderAbout />
+          <ProfileUser />
         </AboutGame>
     </div>
   );
