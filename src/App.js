@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import CheckboxEvents from "./objects/CheckboxEvents"
+import InputCheckbox from "./objects/InputCheckbox"
 import AboutGame from "./objects/AboutGame"
 import HeaderGame from "./components/HeaderGame"
 import HashtagGame from "./components/HashtagGame"
@@ -14,10 +14,10 @@ const App = () => {
   const handleClickRemove = () => setActiveAbout("");
   
   return (
-    <main className="app">
+    <main id="main" className="app">
         <HeaderGame onClick={handleClickAdd}/>
         <HashtagGame />
-        <CheckboxEvents id="show" value="show" content="Mostrar eventos"/>
+        <InputCheckbox id="show" value="show" content="Mostrar eventos"/>
         <AboutGame className={activeAbout}>
           <HeaderAbout onClick={handleClickRemove}/>
           <ProfileUser />

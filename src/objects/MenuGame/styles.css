@@ -1,11 +1,11 @@
-.menu-hamburg {
+.menu-game {
      display: block;
      text-indent: -9999px;
 }
 
-.menu-hamburg::before,
-.menu-hamburg::after, 
-.menu-hamburg > .center {
+.menu-game::before,
+.menu-game::after, 
+.menu-game > .center {
      content: "";
      display: block;
      width: 100%;
@@ -14,7 +14,7 @@
      border-radius: 5px;
 }
 
-.menu-hamburg::before,
-.menu-hamburg > .center {
+.menu-game::before,
+.menu-game > .center {
      margin-bottom: 5px;
 }
