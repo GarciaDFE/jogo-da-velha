@@ -4,7 +4,12 @@
      position: relative;
      cursor: pointer;
      border: none;
-     background-color: var(--color-gray-light);
+}
+
+@media all and (min-width:768px) {
+     .player-game:hover {
+          background-color: var(--color-gray-light);
+     }
 }
 
 /* Jogador X */
