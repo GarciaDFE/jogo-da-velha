@@ -28,3 +28,7 @@
 .app > .main-input:checked ~ .history-game {
   display: block;
 }
+
+.app > .history-game > .action.-active {
+  display: block;
+}

@@ -4,6 +4,7 @@
 
 .history-game > .action {
      margin-bottom: var(--spacing-medium);
+     display: none;
 }
 
 .history-game .tag-game {
