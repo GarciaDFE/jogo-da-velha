@@ -31,3 +31,16 @@
      justify-content: space-between;
      margin: 0 auto;
 }
+
+@media all and (min-width: 1280px) {
+     .profile-user > .title {
+          font-size: var(--size-very-big);
+     }
+     .profile-user > .description {
+          font-size: var(--size-medium);
+     }
+     .profile-user .avatar-profile {
+          width: 150px;
+     }
+     
+}

@@ -6,7 +6,7 @@
      border: none;
 }
 
-@media all and (min-width:768px) {
+@media all and (min-width: 1280px) {
      .player-game:hover {
           background-color: var(--color-gray-light);
      }

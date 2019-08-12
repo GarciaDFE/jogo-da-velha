@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./styles/settings/breaks.css";
 import "./styles/settings/colors.css";
 import "./styles/settings/spacing.css";
 import "./styles/settings/size.css";

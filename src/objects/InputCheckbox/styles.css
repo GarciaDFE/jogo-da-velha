@@ -22,3 +22,16 @@
 .main-input:checked + .label-event::before {
      background-color: var(--color-first);
 }
+
+@media all and (min-width: 520px) {
+     .label-event {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+     }
+}
+@media all and (min-width: 1280px) {
+     .label-event {
+          width: 100%;
+     }
+}

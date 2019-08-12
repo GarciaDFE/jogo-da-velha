@@ -12,3 +12,9 @@
      box-sizing: border-box;
      display: inline-block;
 }
+
+@media all and (min-width: 1280px) {
+     .history-game {
+          width: 210px;
+     }
+}

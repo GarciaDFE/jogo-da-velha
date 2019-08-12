@@ -11,3 +11,9 @@
 .nav-item.-light {
   color: var(--color-gray-zero);
 }
+
+@media all and (min-width: 1280px) {
+  .nav-item {
+    font-size: 18px;
+  }
+}

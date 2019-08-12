@@ -7,21 +7,24 @@ import HashtagGame from "./components/HashtagGame"
 import HeaderAbout from "./components/HeaderAbout";
 import ProfileUser from "./components/ProfileUser";
 import HistoryGame from "./components/HistoryGame";
+let numList = 0;
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
+  const [activeTag, setActiveTag] = useState("");
   
-  const handleClickAdd = () => setActiveAbout("-active");
-  const handleClickRemove = () => setActiveAbout("");
-
+  const handleClickAddAbout = () => setActiveAbout("-active");
+  const handleClickRemoveAbout = () => setActiveAbout("");
+  const handleClickAddTag = () => setActiveTag(() => numList++);
+    
   return (
     <main id="main" className="app">
-        <HeaderGame onClick={handleClickAdd}/>
-        <HashtagGame />
+        <HeaderGame onClick={handleClickAddAbout}/>
+        <HashtagGame numList={handleClickAddTag}/>
         <InputCheckbox id="show" value="show" content="Mostrar eventos"/>
-        <HistoryGame />
+        <HistoryGame className={activeTag}/>
         <AboutGame className={activeAbout}>
-          <HeaderAbout onClick={handleClickRemove}/>
+          <HeaderAbout onClick={handleClickRemoveAbout}/>
           <ProfileUser />
         </AboutGame>
     </main>

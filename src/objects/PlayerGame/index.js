@@ -2,18 +2,17 @@ import React, { useState } from "react";
 import "./styles.css";
 let nowPlay = "x";
 
-const PlayerGame = ({player = "false"}) => {
+const PlayerGame = ({player = ""}) => {
      const [statePlayer, setStatePlayer] = useState(player);
      const handleClick = () => {
-          if (nowPlay === "x") {
+         if (statePlayer === "" && nowPlay === "x") {
                setStatePlayer("x");
                nowPlay = "o";
-          } else {
+         } else if (statePlayer === "" && nowPlay === "o") {
                setStatePlayer("o");
                nowPlay = "x";
-          }
+         }
      }
-
      return (
           <button 
                onClick={handleClick} 

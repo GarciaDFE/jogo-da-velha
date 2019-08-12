@@ -14,3 +14,10 @@
 .header-game > .menu-game {
      width: 25px;
 }
+
+@media all and (min-width: 1280px) {
+     .header-game {
+          background-color: var(--color-gray-medium);
+          padding: 20px 120px;
+     }
+}
