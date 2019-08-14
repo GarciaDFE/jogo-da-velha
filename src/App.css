@@ -11,7 +11,7 @@
   margin-bottom: 85px;
 }
 
-.app > .table-game {
+.app > .group > .table-game {
   width: 80vw;
   height: 80vw;
   max-width: 330px;
@@ -19,7 +19,7 @@
   margin-bottom: 41px;
 }
 
-.app > .label-event {
+.app > .group > .label-event {
   margin-bottom: var(--spacing-big);
 }
 
@@ -27,20 +27,24 @@
   display: none;
 }
 
-.app > .main-input:checked ~ .history-game {
+/* .app .main-input:checked ~ .history-game {
+  display: block;
+} */
+
+.app > .history-game.-active {
   display: block;
 }
 
-.app > .history-game > .action.-active {
-  display: block;
+@media all and (min-width: 520px) {
+  .label-event {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+  }
 }
 
 @media all and (min-width: 1280px) {
   .app {
     width: 100%;
-
-  }
-  .app > .label-event{
-    order: 1;
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import TableGame from "../../objects/TableGame"
 import PlayerGame from "../../objects/PlayerGame"
+
 import "./styles.css"
 
 const HashtagGame = ({ onClick }) => {
