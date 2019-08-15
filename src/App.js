@@ -11,9 +11,12 @@ import HistoryGame from "./components/HistoryGame";
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
   const [activeHistory, setActiveHistory] = useState("");
+  const [activeTag, setActiveTag] = useState("");
   
   const handleClickAddAbout = () => setActiveAbout("-active");
   const handleClickRemoveAbout = () => setActiveAbout("");
+  
+  const handleClickAddTag = () => setActiveTag("-active");
 
   const handleClick = () => {
     if (activeHistory) {
@@ -27,10 +30,14 @@ const App = () => {
     <main id="main" className="app">
         <HeaderGame onClick={handleClickAddAbout}/>
         <div className="group">
-          <HashtagGame />
-          <InputCheckbox onClick={handleClick} id="show" value="show" content="Mostrar eventos"/>
+          <HashtagGame onClick={handleClickAddTag}/>
+          <InputCheckbox 
+            onClick={handleClick} 
+            id="show" 
+            value="show" 
+            content="Mostrar eventos"/>
         </div>
-        <HistoryGame className={activeHistory}/>
+        <HistoryGame className={activeHistory} activeTag={activeTag}/>
         <AboutGame className={activeAbout}>
           <HeaderAbout onClick={handleClickRemoveAbout}/>
           <ProfileUser />

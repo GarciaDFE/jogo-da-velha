@@ -35,6 +35,14 @@
   display: block;
 }
 
+.app > .history-game > .action {
+  display: none;
+}
+
+.app > .history-game > .action.-active {
+  display: block;
+}
+
 @media all and (min-width: 520px) {
   .label-event {
        width: 100%;
